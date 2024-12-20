@@ -1,0 +1,23 @@
+.try_error {
+  color: var(--try-error-color);
+}
+
+.try_success {
+  color: var(--try-success-color);
+}
+
+.try_tpo_verify_area input {
+  max-width: 50px;
+  text-align: center;
+}
+
+.bot_link {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.back_btn {
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
