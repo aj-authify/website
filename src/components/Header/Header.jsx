@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Header.css'
+import telegramIcon from '../../media/icons/telegram.svg'
 
 export default function Header() {
   return (
@@ -9,7 +10,15 @@ export default function Header() {
           <div className="logo">
             <Link to="/">Authify</Link>
           </div>
-          <div className="header_items list_x">
+          <div className="header_items list_x d_f_ai_ce">
+            <Link to="https://t.me/authify_bot" className="d_f_ce">
+              <img
+                className="header_icon icon"
+                src={telegramIcon}
+                alt="telegram"
+              />
+            </Link>
+            <div>|</div>
             <Link to="/dev">Developer</Link>
             <Link to="https://akbarswe.uz">About me</Link>
           </div>
