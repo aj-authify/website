@@ -1,2 +1,2 @@
-# website
+# Authify
 Trust through verification
