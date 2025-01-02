@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import Button from '../../components/Button/Button'
 import { codeExamples } from '../../info/codeExamples'
-import copyIcon from '../../media/icons/copy.svg'
+import { ReactComponent as CopyIcon } from '../../media/icons/copy.svg'
 
 export default function DeveloperCode() {
   const [activeExample, setActiveExample] = useState({
@@ -28,7 +28,9 @@ export default function DeveloperCode() {
   return (
     <>
       <div className={`copied_msg ${showCopied ? 'show' : ''}`}>Copied</div>
-      <div className="dev_sub_title">Post <span>/tpo/generate</span></div>
+      <div className="dev_sub_title">
+        Post <span>/tpo/generate</span>
+      </div>
       <div className="dev_lan_con list_y">
         <div className="dev_lans list_x">
           {devLanButtons.map((btn, i) => {
@@ -52,11 +54,13 @@ export default function DeveloperCode() {
             className="dev_btn"
             onClick={() => copy(codeExamples.get[activeExample.get].code)}
           >
-            <img className="icon" src={copyIcon} alt="copy" />
+            <CopyIcon className="icon" />
           </Button>
         </div>
       </div>
-      <div className="dev_sub_title">Post <span>/tpo/verify</span></div>
+      <div className="dev_sub_title">
+        Post <span>/tpo/verify</span>
+      </div>
       <div className="dev_lan_con list_y">
         <div className="dev_lans list_x">
           {devLanButtons.map((btn, i) => {
@@ -82,7 +86,7 @@ export default function DeveloperCode() {
             className="dev_btn"
             onClick={() => copy(codeExamples.post[activeExample.post].code)}
           >
-            <img className="icon" src={copyIcon} alt="copy" />
+            <CopyIcon className="icon" />
           </Button>
         </div>
       </div>
