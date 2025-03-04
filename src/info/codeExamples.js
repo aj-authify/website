@@ -1,7 +1,7 @@
 export const codeExamples = {
   get: {
     javascript: {
-      code: `fetch('https://api-hj87.onrender.com/tpo/generate', {
+      code: `fetch('https://authify-api-ame4edcncxbugrbc.eastus-01.azurewebsites.net/tpo/generate', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ export const codeExamples = {
       code: `import requests
 import json
 
-url = "https://api-hj87.onrender.com/tpo/generate"
+url = "https://authify-api-ame4edcncxbugrbc.eastus-01.azurewebsites.net/tpo/generate"
 headers = {"Content-Type": "application/json"}
 data = {
     "phone_number": phoneNumber,
@@ -43,7 +43,7 @@ import java.io.BufferedReader;
 public class PostRequest {
   public static void main(String[] args) {
     try {
-      URL url = new URL("https://api-hj87.onrender.com/tpo/generate");
+      URL url = new URL("https://authify-api-ame4edcncxbugrbc.eastus-01.azurewebsites.net/tpo/generate");
       HttpURLConnection con = (HttpURLConnection) url.openConnection();
       con.setRequestMethod("POST");
       con.setRequestProperty("Content-Type", "application/json");
@@ -76,7 +76,7 @@ public class PostRequest {
     },
     php: {
       code: `<?php
-$url = "https://api-hj87.onrender.com/tpo/generate";
+$url = "https://authify-api-ame4edcncxbugrbc.eastus-01.azurewebsites.net/tpo/generate";
 $data = ["phone_number" => "phoneNumber", "website" => "website"];
 
 $options = [
@@ -101,7 +101,7 @@ if ($response === false) {
 require 'json'
 require 'uri'
 
-uri = URI('https://api-hj87.onrender.com/tpo/generate')
+uri = URI('https://authify-api-ame4edcncxbugrbc.eastus-01.azurewebsites.net/tpo/generate')
 data = {
   phone_number: 'phoneNumber',
   website: 'website'
@@ -124,7 +124,7 @@ import (
 )
 
 func main() {
-  url := "https://api-hj87.onrender.com/tpo/generate"
+  url := "https://authify-api-ame4edcncxbugrbc.eastus-01.azurewebsites.net/tpo/generate"
   data := map[string]string{
     "phone_number": "phoneNumber",
     "website":      "website",
@@ -158,7 +158,7 @@ func main() {
   },
   post: {
     javascript: {
-      code: `fetch('https://api-hj87.onrender.com/tpo/verify', {
+      code: `fetch('https://authify-api-ame4edcncxbugrbc.eastus-01.azurewebsites.net/tpo/verify', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
@@ -177,7 +177,7 @@ func main() {
       code: `import requests
 import json
 
-url = "https://api-hj87.onrender.com/tpo/verify"
+url = "https://authify-api-ame4edcncxbugrbc.eastus-01.azurewebsites.net/tpo/verify"
 headers = {"Content-Type": "application/json"}
 data = {
     "website": website,
@@ -202,7 +202,7 @@ import java.io.BufferedReader;
 public class PostRequest {
   public static void main(String[] args) {
     try {
-      URL url = new URL("https://api-hj87.onrender.com/tpo/verify");
+      URL url = new URL("https://authify-api-ame4edcncxbugrbc.eastus-01.azurewebsites.net/tpo/verify");
       HttpURLConnection con = (HttpURLConnection) url.openConnection();
       con.setRequestMethod("POST");
       con.setRequestProperty("Content-Type", "application/json");
@@ -235,7 +235,7 @@ public class PostRequest {
     },
     php: {
       code: `<?php
-$url = "https://api-hj87.onrender.com/tpo/verify";
+$url = "https://authify-api-ame4edcncxbugrbc.eastus-01.azurewebsites.net/tpo/verify";
 $data = ["website" => "website", "phone_number" => "+phoneNumber", "tpo" => "tpo"];
 
 $options = [
@@ -260,7 +260,7 @@ if ($response === false) {
 require 'json'
 require 'uri'
 
-uri = URI('https://api-hj87.onrender.com/tpo/verify')
+uri = URI('https://authify-api-ame4edcncxbugrbc.eastus-01.azurewebsites.net/tpo/verify')
 data = {
   website: 'website',
   phone_number: '+phoneNumber',
@@ -284,7 +284,7 @@ import (
 )
 
 func main() {
-  url := "https://api-hj87.onrender.com/tpo/verify"
+  url := "https://authify-api-ame4edcncxbugrbc.eastus-01.azurewebsites.net/tpo/verify"
   data := map[string]string{
     "website":      "website",
     "phone_number": "+" + phoneNumber,
